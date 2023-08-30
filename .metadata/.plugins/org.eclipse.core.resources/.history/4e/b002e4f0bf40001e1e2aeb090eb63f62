@@ -1,0 +1,33 @@
+package gui;
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class MessageBox {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter Username: ");
+		String Username = scan.nextLine();
+		System.out.println("Enter Password: ");
+		String pw = scan.next();
+
+		if (Username.equals("Admin") && pw.equals("123!@#"))
+			JOptionPane.showMessageDialog(null, "Login Successfully","Successful",JOptionPane.ERROR_MESSAGE);
+		else {
+			JOptionPane.showMessageDialog(null, "Invalid Login", "Login Error", JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null, "Invalid Login", "Login Error", JOptionPane.QUESTION_MESSAGE);
+			JOptionPane.showMessageDialog(null, "Invalid Login", "Login Error", JOptionPane.WARNING_MESSAGE);
+			JOptionPane.showMessageDialog(null, "Invalid Login", "Login Error", JOptionPane.PLAIN_MESSAGE);
+			JOptionPane.showMessageDialog(null, "Invalid Login");
+	}
+		JOptionPane.showConfirmDialog(null, "Do another yes/no");
+		if(JOptionPane.YES_OPTION==0) 
+			JOptionPane.showConfirmDialog(null, "Do you remove item", "Delete Title", JOptionPane.OK_CANCEL_OPTION,JOptionPane.ERROR_MESSAGE);
+		else if(JOptionPane.NO_OPTION==1)
+			JOptionPane.showMessageDialog(null, "Confirm");
+	
+	}
+}
