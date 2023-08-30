@@ -17,11 +17,11 @@ public class MethodEx1 {
 		// TODO Auto-generated method stub
 		MethodEx1 st = new MethodEx1();
 		st.name = "Aung Aung";
-		st.age = 14;
+		st.age = 96;
 		st.createstudent();
 		MethodEx1 st1 = new MethodEx1();
 		st1.name = "Maung Maung";
-		st1.age = 15;
+		st1.age = 20;
 		st1.createstudent();
 
 		System.out.println(MethodEx1.module);
